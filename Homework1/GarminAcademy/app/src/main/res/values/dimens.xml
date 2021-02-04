@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spacing_alpha">4dp</dimen>
+    <dimen name="spacing_beta">8dp</dimen>
+    <dimen name="spacing_gamma">12dp</dimen>
+    <dimen name="spacing_delta">16dp</dimen>
+    <dimen name="spacing_epsilon">20dp</dimen>
+    <dimen name="spacing_zeta">24dp</dimen>
+
+    <dimen name="text_alpha">12sp</dimen>
+    <dimen name="text_beta">16sp</dimen>
+    <dimen name="text_gama">20sp</dimen>
+    <dimen name="text_delta">24sp</dimen>
+
+</resources>
