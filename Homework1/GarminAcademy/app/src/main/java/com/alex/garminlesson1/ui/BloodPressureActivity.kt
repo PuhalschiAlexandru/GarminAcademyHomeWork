@@ -17,9 +17,10 @@ class BloodPressureActivity : AppCompatActivity() {
     }
 
     private lateinit var binding: ActivityBloodPressureBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_blood_pressure)
         setUpListeners()
     }
 

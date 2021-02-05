@@ -5,4 +5,6 @@
     <string name="bank_exercise">Bank Exercise</string>
     <string name="blood_pressure_exercise">Blood Pressure Exercise</string>
     <string name="factorial_exercise">Factorial Exercise</string>
+    <string name="calculate_factorial">Calculate factorial</string>
+    <string name="introduce_n">Introduce N</string>
 </resources>
