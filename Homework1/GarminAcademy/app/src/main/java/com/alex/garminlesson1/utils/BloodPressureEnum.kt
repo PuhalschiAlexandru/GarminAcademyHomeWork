@@ -19,32 +19,17 @@ enum class BloodPressureEnum(
 
     companion object {
         fun verifyBloodPressure(bloodPressurePair: BloodPressurePair): BloodPressureEnum {
-            return   if (bloodPressurePair.systolicPressure in HYPERTENSIVE_CRISIS.systolicPressure || bloodPressurePair.diastolicPressure in HYPERTENSIVE_CRISIS.diastolicPressure) {
+            return if (bloodPressurePair.systolicPressure in HYPERTENSIVE_CRISIS.systolicPressure || bloodPressurePair.diastolicPressure in HYPERTENSIVE_CRISIS.diastolicPressure) {
                 HYPERTENSIVE_CRISIS
-            }  else if (bloodPressurePair.systolicPressure in HIGH_STAGE_TWO.systolicPressure || bloodPressurePair.diastolicPressure in HIGH_STAGE_TWO.diastolicPressure) {
+            } else if (bloodPressurePair.systolicPressure in HIGH_STAGE_TWO.systolicPressure || bloodPressurePair.diastolicPressure in HIGH_STAGE_TWO.diastolicPressure) {
                 HIGH_STAGE_TWO
             } else if (bloodPressurePair.systolicPressure in HIGH_STAGE_ONE.systolicPressure || bloodPressurePair.diastolicPressure in HIGH_STAGE_ONE.diastolicPressure) {
                 HIGH_STAGE_ONE
-            }  else if (bloodPressurePair.systolicPressure in ELEVATED.systolicPressure && bloodPressurePair.diastolicPressure in ELEVATED.diastolicPressure) {
+            } else if (bloodPressurePair.systolicPressure in ELEVATED.systolicPressure && bloodPressurePair.diastolicPressure in ELEVATED.diastolicPressure) {
                 ELEVATED
-            }  else if (bloodPressurePair.systolicPressure in NORMAL.systolicPressure && bloodPressurePair.diastolicPressure in NORMAL.diastolicPressure) {
+            } else if (bloodPressurePair.systolicPressure in NORMAL.systolicPressure && bloodPressurePair.diastolicPressure in NORMAL.diastolicPressure) {
                 NORMAL
             } else DEAD
-
-
-
-
-//                if (bloodPressurePair.systolicPressure in NORMAL.systolicPressure && bloodPressurePair.diastolicPressure in NORMAL.diastolicPressure) {
-//                NORMAL
-//            } else if (bloodPressurePair.systolicPressure in ELEVATED.systolicPressure && bloodPressurePair.diastolicPressure in ELEVATED.diastolicPressure) {
-//                ELEVATED
-//            } else if (bloodPressurePair.systolicPressure in HIGH_STAGE_ONE.systolicPressure || bloodPressurePair.diastolicPressure in HIGH_STAGE_ONE.diastolicPressure) {
-//                HIGH_STAGE_ONE
-//            } else if (bloodPressurePair.systolicPressure in HIGH_STAGE_TWO.systolicPressure || bloodPressurePair.diastolicPressure in HIGH_STAGE_TWO.diastolicPressure) {
-//                HIGH_STAGE_TWO
-//            } else if (bloodPressurePair.systolicPressure in HYPERTENSIVE_CRISIS.systolicPressure || bloodPressurePair.diastolicPressure in HYPERTENSIVE_CRISIS.diastolicPressure) {
-//                HYPERTENSIVE_CRISIS
-//            } else DEAD
         }
     }
 }

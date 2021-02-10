@@ -6,15 +6,15 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.MainActivity">
+        tools:context=".ui.HeartRateExerciseActivity">
 
-        <Button
-            android:id="@+id/bloodPressureExerciseBttn"
+        <TextView
+            android:id="@+id/labelTV"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/spacing_zeta"
-            android:padding="@dimen/spacing_gamma"
-            android:text="@string/blood_pressure_exercise"
+            android:gravity="center"
+            android:text="@string/results"
+            android:textColor="@color/black"
             android:textSize="@dimen/text_gama"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -22,32 +22,27 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.2" />
 
-        <Button
-            android:id="@+id/heartRateExerciseBttn"
+        <TextView
+            android:id="@+id/resultsTV"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/spacing_zeta"
-            android:padding="@dimen/spacing_gamma"
-            android:text="@string/heart_rate_exercise"
-            android:textSize="@dimen/text_gama"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="@dimen/spacing_zeta"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_beta"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.4" />
+            app:layout_constraintTop_toBottomOf="@+id/labelTV"
+            tools:text="Results are displayed here" />
 
         <Button
-            android:id="@+id/factorialExerciseBttn"
+            android:id="@+id/showResultsBttn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="@dimen/spacing_zeta"
-            android:padding="@dimen/spacing_gamma"
-            android:text="@string/factorial_exercise"
-            android:textSize="@dimen/text_gama"
+            android:layout_margin="@dimen/spacing_delta"
+            android:text="@string/show_results"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.6" />
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

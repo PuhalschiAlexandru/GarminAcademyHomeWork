@@ -18,10 +18,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun setUpListeners() {
         binding.bloodPressureExerciseBttn.setOnClickListener {
-            startActivity(BankExerciseActivity::class.java)
+            startActivity(HeartRateExerciseActivity::class.java)
         }
-        binding.bankExerciseBttn.setOnClickListener {
-            startActivity(BankExerciseActivity::class.java)
+        binding.heartRateExerciseBttn.setOnClickListener {
+            startActivity(HeartRateExerciseActivity::class.java)
         }
         binding.factorialExerciseBttn.setOnClickListener {
             startActivity(FactorialExerciseActivity::class.java)

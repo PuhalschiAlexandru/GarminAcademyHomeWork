@@ -9,10 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GarminLesson1">
-        <activity android:name=".ui.BloodPressureActivity"></activity>
-        <activity android:name=".ui.FactorialExerciseActivity" />
-        <activity android:name=".ui.BankExerciseActivity" />
-        <activity android:name=".ui.MainActivity">
+        <activity
+            android:name=".ui.BloodPressureActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.FactorialExerciseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.HeartRateExerciseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
