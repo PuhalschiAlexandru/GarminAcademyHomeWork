@@ -1,4 +1,4 @@
-package com.alex.garminlesson1.utils
+package com.alex.garminlesson1.structureexercise
 
 import com.alex.garminlesson1.model.Rectangle
 
